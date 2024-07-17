@@ -1,11 +1,14 @@
 import os
+
 clear = lambda: os.system('cls')
 clear()
 from gavel import logo
+
 print(logo)
 
 auction_bids = {}
 bidding_finished = False
+
 
 def find_highest_bidder(bid):
     clear()
@@ -15,7 +18,7 @@ def find_highest_bidder(bid):
         if auction_bids[key] > highest_bid:
             winner = key
             highest_bid = auction_bids[key]
-    
+
     print(f"The winner is {winner} with a bid of ${highest_bid}.")
 
 

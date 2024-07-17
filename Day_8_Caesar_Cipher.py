@@ -1,8 +1,9 @@
 from art import logo
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print(logo)
-
 
 
 def caesar(start_text, shift_amount, cipher_direction):
@@ -19,6 +20,7 @@ def caesar(start_text, shift_amount, cipher_direction):
 
     print(f"The {cipher_direction}d text is {end_text}")
 
+
 should_continue = True
 while should_continue:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
@@ -31,4 +33,3 @@ while should_continue:
     if result == "no":
         should_continue = False
         print("Goodbye")
-
