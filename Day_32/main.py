@@ -1,11 +1,11 @@
 import smtplib
 import datetime as dt
 import random
-
+import os
 
 def send_mail():
     my_email = "jason.python.learning@gmail.com"
-    my_password = "tkjbmjnixscpataf"
+    my_password = os.environ.get("PYTHON_EMAIL_PASSWORD")
     with smtplib.SMTP('smtp.gmail.com') as connection:
         connection.starttls()
         connection.login(my_email, my_password)
